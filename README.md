@@ -15,7 +15,7 @@ Open the browser:
 open http://localhost:3000
 ```
 
-**Problem**: Vue Devtools extensionm is disabled :(
+**Problem**: Vue Devtools extension is disabled :(
 
 ![screenshot](./public/screenshot.png)
 
