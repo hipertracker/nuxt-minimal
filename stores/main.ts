@@ -3,22 +3,19 @@ import {defineStore} from 'pinia'
 export const useMainStore = defineStore('main', () => {
     const darkMode = ref(true);
 
-    function toggleDarkMode() {
+    const currentTheme = computed(() => {
+        return darkMode.value ? 'dark' : 'light';
+    });
+
+
+    function toggleDarkMode(theme: { global: { name: { value: string; }; }; }) {
         darkMode.value = !darkMode.value;
-    }
-
-    function setDarkMode() {
-        darkMode.value = true;
-    }
-
-    function setLightMode() {
-        darkMode.value = false;
+        theme.global.name.value = currentTheme.value
     }
 
     return {
+        currentTheme,
         darkMode,
         toggleDarkMode,
-        setDarkMode,
-        setLightMode
     };
 });

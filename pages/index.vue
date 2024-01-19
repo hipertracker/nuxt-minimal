@@ -1,5 +1,5 @@
 <template>
   <div>
-    <DarkMode />
+    <ToggleDarkMode />
   </div>
 </template>

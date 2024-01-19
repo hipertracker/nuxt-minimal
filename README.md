@@ -17,7 +17,7 @@ open http://localhost:3000
 
 **Problem**: Vue Devtools extension is disabled :(
 
-![screenshot](./public/screenshot.png)
+![screenshot](./public/screenshot2.png)
 
 ```bash
 npx nuxi info
@@ -35,3 +35,7 @@ npx nuxi info
 - Runtime Modules:  `@pinia/nuxt@0.5.1`
 - Build Modules:    `-`
 ```
+
+## Updates
+
+* added Vuetify, Pinia store and ToggleDarkMode component
