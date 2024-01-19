@@ -1,75 +1,21 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Minimal
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a temporal project to reproduce an issue with Vue Devtools in Nuxt project.
 
-## Setup
-
-Make sure to install the dependencies:
+Install and run Nuxt in dev mode:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Open the browser:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+open http://localhost:3000
 ```
 
-Locally preview production build:
+**Problem**: Vue Devtools extensionm is disabled :(
 
-```bash
-# npm
-npm run preview
+![screenshot](./public/screenshot.png)
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
