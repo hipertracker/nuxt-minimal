@@ -2,6 +2,8 @@
 
 This is a temporal project to reproduce an issue with Vue Devtools in Nuxt project.
 
+**UPDATE**: the problem was solved. See the Updates section below.
+
 Install and run Nuxt in dev mode:
 
 ```bash
@@ -38,4 +40,6 @@ npx nuxi info
 
 ## Updates
 
-* added Vuetify, Pinia store and ToggleDarkMode component
+* Added Vuetify, Pinia store and ToggleDarkMode component
+
+* Issue resolved! The problem stemmed from an outdated version of Vue Devtools that Google Chrome and Brave had detected. The solution was to download and install the extension directly from the official website: https://devtools.vuejs.org/guide/installation.html
