@@ -1,22 +1,21 @@
-import {defineStore} from 'pinia'
+import { defineStore } from 'pinia';
 
 export const useMainStore = defineStore('main', () => {
     const darkMode = ref(true);
 
-    const currentTheme = computed(() => {
-        return darkMode.value ? 'dark' : 'light';
-    });
+    console.log('isServer', typeof window === 'undefined');
 
-
-    function toggleDarkMode(theme: { global: { name: { value: string; }; }; }) {
+    function toggleDarkMode () {
         darkMode.value = !darkMode.value;
-        theme.global.name.value = currentTheme.value
     }
 
     return {
-        currentTheme,
         darkMode,
         toggleDarkMode,
     };
-}, {persist: true});
+}, {
+    persist: {
+        storage: persistedState.localStorage,
+    }
+});
 

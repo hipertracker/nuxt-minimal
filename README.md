@@ -40,6 +40,9 @@ npx nuxi info
 
 ## Updates
 
-* Added Vuetify, Pinia store and ToggleDarkMode component
+* Add persistent Pinia store
 
 * Issue resolved! The problem stemmed from an outdated version of Vue Devtools that Google Chrome and Brave had detected. The solution was to download and install the extension directly from the official website: https://devtools.vuejs.org/guide/installation.html
+
+* Added Vuetify, Pinia store and ToggleDarkMode component
+

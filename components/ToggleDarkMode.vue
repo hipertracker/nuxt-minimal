@@ -1,14 +1,20 @@
 <script lang="ts" setup>
-import {useTheme} from "vuetify";
-import {useMainStore} from "~/stores/main";
+import { useTheme } from "vuetify";
+import { useMainStore } from "~/stores/main";
 
 const theme = useTheme();
 const store = useMainStore();
-const {darkMode} = toRefs(store);
+
+const { darkMode } = toRefs(store);
 
 function toggleTheme() {
-  store.toggleDarkMode(theme);
+  store.toggleDarkMode();
+  theme.global.name.value = darkMode.value ? "dark" : "light";
 }
+
+onMounted(() => {
+  theme.global.name.value = darkMode.value ? "dark" : "light";
+});
 </script>
 
 <template>
