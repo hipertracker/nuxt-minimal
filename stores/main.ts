@@ -18,4 +18,5 @@ export const useMainStore = defineStore('main', () => {
         darkMode,
         toggleDarkMode,
     };
-});
+}, {persist: true});
+

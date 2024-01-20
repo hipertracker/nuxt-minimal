@@ -2,13 +2,11 @@
 
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 export default defineNuxtConfig({
-
   devtools: {
     enabled: true,
-
-    timeline: {
-      enabled: true,
-    },
+    // timeline: {
+    //   enabled: true,
+    // },
   },
   build: {
     transpile: ['vuetify'],
@@ -22,7 +20,6 @@ export default defineNuxtConfig({
     },
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
-    '@nuxt/devtools',
   ],
   vite: {
     vue: {
